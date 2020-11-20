@@ -470,7 +470,7 @@ mark,
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "â€”Â ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -10246,9 +10246,4 @@ body {
 }
 .sb-sidenav-light .sb-sidenav-footer {
   background-color: #e9ecef;
-}
-
-.ciudad{
-
-    color: #0069d9;
 }
