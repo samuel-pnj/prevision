@@ -1,23 +1,23 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { ComunicationService } from './comunication.service';
 
 
-@Injectable({providedIn:'root'})
+@Injectable({providedIn: 'root'})
 
 export class UserService {
 
-constructor(private comunication:ComunicationService){
+constructor(private comunication: ComunicationService){
 }
 
-login(email,pwd):Promise<any>{
+login(email, pwd): Promise<any>{
 
-    let body={
-      
-        email:email,
-        pwd:pwd
-    }
+    const body = {
 
-    return this.comunication.post('/users/login',body)
+        email,
+        pwd
+    };
+
+    return this.comunication.post('/users/login', body);
 
 }
 

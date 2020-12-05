@@ -10,8 +10,8 @@ import { UserService } from 'src/app/services/user.service';
 export class LoginComponent implements OnInit {
 
 
-   email:string="";
-   pwd:string="";
+   email = '';
+   pwd = '';
 
   constructor(
     private router: Router,
@@ -22,19 +22,19 @@ export class LoginComponent implements OnInit {
   }
   botonlogin(){
 
-      this.userService.login(this.email,this.pwd) 
+      this.userService.login(this.email, this.pwd)
       .then(response => {
-        if(response.isvalid){
+        if (response.isvalid){
 
           this.router.navigate(['/principal']);
 
         } else{
 
-          console.log('Usuario/Contraseña erroneo')
+          console.log('Usuario/Contraseña erroneo');
         }
 
       })
-      .catch(error => console.log(error))    
+      .catch(error => console.log(error));
   }
 
   checkTerms(){

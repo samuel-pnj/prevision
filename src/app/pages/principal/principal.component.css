@@ -9866,7 +9866,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #0980e7 !important;
 }
 
 .text-black-50 {
@@ -10026,6 +10026,7 @@ body {
 }
 #layoutAuthentication #layoutAuthentication_footer {
   min-width: 0;
+  text-align: justify;
 }
 
 #layoutSidenav {
@@ -10071,8 +10072,7 @@ body {
     transform: translateX(0);
   }
   #layoutSidenav #layoutSidenav_content {
-    margin-left: 0;
-    transition: margin 0.15s ease-in-out;
+
   }
 
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {

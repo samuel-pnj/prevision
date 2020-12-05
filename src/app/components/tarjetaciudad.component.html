@@ -1,0 +1,15 @@
+<div *ngIf="ciudad">
+<div class="card-header">
+    <h4 class="my-0 font-weight-normal">{{ciudad.name |uppercase}}</h4>
+</div>
+<div class="card-body">
+    <ul class="list-unstyled mt-3 mb-4">
+        <li>{{ciudad.temperatures?.max}}</li>
+        <li>{{ciudad.temperatures?.min}}</li>
+        <li>
+            <span>{{ciudad.stateSky?.description}}</span>
+            <i [className]="iconoEstado()"></i>
+        </li>
+    </ul>
+</div>
+</div>
